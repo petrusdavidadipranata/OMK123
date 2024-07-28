@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --bg-color: #f9f9f9;
+    --link-color: #333;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --bg-color: #222;
+    --link-color: #fff;
+  }
+  
+
+/* Menetapkan font default untuk seluruh halaman */
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 1080px;
+    width: 100%; /* Font sans-serif untuk teks umum */
+}
+
+/* Menetapkan font untuk header dan elemen penting */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Font serif untuk heading */
+}
+
+
+/* Navbar styling */
+.navbar {
+    background-color: #eceaea;
+    border-bottom: 2px solid #dee2e6;
+    border-radius: 0 0 10px 10px; ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 0.7rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif; /* Font elegan untuk logo */
+    font-weight: 700; /* Berat font tebal untuk nama brand */
+    color: #050505; /* Warna teks logo */
+}
+
+.navbar-brand img {
+    height: 40px; /* Menyesuaikan ukuran logo */
+    width: auto;
+    margin-right: 0.5rem; /* Jarak antara logo dan teks */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    /*Fontmodernuntuklink*/font-weight: 500;
+    /*Beratfontsedang*/color: #0c0c0c;
+    /*Warnatekslink*/margin-left: 1rem;
+    /*Jarakantaralink*/transition: color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #313135; /* Warna teks saat hover */
+    padding-bottom: 0.2rem; /* Menambahkan padding bawah saat hover */
+    border-bottom: 2px solid #080808; /* Garis bawah saat hover */
+}
+
+/* Navbar-toggler styling */
+.navbar-toggler {
+    border: none; /* Menghilangkan border default */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23666" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E'); /* Icon hamburger */
+}
+
+/* Styling untuk navbar-collapse */
+.navbar-collapse {
+    justify-content: last baseline; /* Mengatur posisi navbar items */
+}
+
+.swal2-popup {
+    border-radius: 15px; /* Membuat sudut lebih membulat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Menambahkan bayangan lembut */
+}
+
+.swal2-title {
+    font-size: 1.5rem; /* Ukuran font judul */
+    font-weight: bold; /* Font judul tebal */
+    font-family: 'Playfair Display', serif; /* Font serif untuk judul SweetAlert2 */
+}
+
+.swal2-confirm {
+    background-color: #28a745; /* Warna background tombol konfirmasi */
+    border-color: #28a745; /* Warna border tombol konfirmasi */
+    font-weight: bold; /* Font tombol tebal */
+}
+
+.swal2-confirm:hover {
+    background-color: #218838; /* Warna background tombol saat hover */
+    border-color: #1e7e34; /* Warna border tombol saat hover */
+}
+
+/* Container header dengan efek blur */
+.containerHeader {
+    position: relative; /* Memastikan posisi relatif untuk konten di atas blur */
+    overflow: hidden; /* Menghindari elemen pseudo keluar dari kontainer */
+}
+
+.containerHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/background-hero.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.hero {
+    color: rgb(31, 30, 30);
+    text-shadow: 2px 2px 8px rgb(184, 182, 182);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Memastikan teks tidak terganggu oleh elemen pseudo */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif; /* Font serif untuk judul hero */
+}
+.hero h2{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif; /* Font sans-serif untuk teks tambahan */
+}
+
+.container p{
+    text-align: left;
+}
+
+/* Acara section styling */
+#acara {
+    background-color: #f8f9fa; /* Latar belakang ringan untuk section acara */
+    padding: 2rem 0;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px; /* Menetapkan tinggi gambar card */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Font serif untuk judul card */
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: justify;/* Font sans-serif untuk teks card */
+}
+.container{
+    padding: 6px;
+}
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+.footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Font sans-serif untuk footer */
+}

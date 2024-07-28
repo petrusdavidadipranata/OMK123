@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orang Muda Katolik Santo Martinus Selorejo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<audio id="backgroundMusic" src="/audio/Ayo Semangat! (1).mp3" preload="auto" loop></audio>
+
+<body>
+    <div class="containerHeader">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo OMK st Martinus">
+                    OMK Santo Martinus
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="home" class="hero">
+            <div>
+                <h1>Hai Orang Muda!!!</h1>
+                <h2>Selamat Datang</h2>
+                <p>Kami Orang Muda Katolik Santo Martinus Selorejo</p>
+            </div>
+        </header>
+    </div>
+    <section id="tentang" class="container my-5">
+        <h2>Tentang Kami</h2>
+        <p>Orang Muda Katolik Stasi Santo Martinus Selorejo adalah sebuah perkumpulan orang muda yang penuh semangat, ceria dan dedikasi, berkomitmen untuk membangun iman dan persaudaraan di tengah-tengah umat Katolik di Selorejo dan sekitarnya. Kami adalah kelompok muda yang bersemangat dalam menjalani kehidupan iman, berfokus pada pengembangan pribadi dan spiritual melalui kegiatan-kegiatan yang inspiratif dan mendalam.</p>
+    </section>
+
+    <section id="acara" class="container my-5">
+        <h2>Dokumentasi</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/acara1.jpg" class="card-img-top" alt="Acara 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Koor Natal</h5>
+                        <p class="card-text">Tanggal: 25 Desember 2022</p>
+                        <p class="card-text">Pelayanan dalam Tuhan, dengan menyanyikan lagu-lagu pujian Natal dengan penuh sukacita dan kebahagiaan untuk merayakan lahirnya sang juru selamat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/acara2.jpg" class="card-img-top" alt="Acara 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Acara 2</h5>
+                        <p class="card-text">Tanggal: 15 Agustus 2024</p>
+                        <p class="card-text">Deskripsi singkat tentang acara 2 yang akan diselenggarakan di lokasi Y.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/acara3.jpg" class="card-img-top" alt="Acara 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Acara 3</h5>
+                        <p class="card-text">Tanggal: 30 Agustus 2024</p>
+                        <p class="card-text">Deskripsi singkat tentang acara 3 yang akan diselenggarakan di lokasi Z.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="container my-5">
+        <h2>Kontak Kami</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+        <div class="social-media mt-4">
+            <h4>Ikuti Kami di Media Sosial:</h4>
+            <a href="https://www.instagram.com/yourprofile" class="btn btn-light mx-2" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@yourprofile" class="btn btn-light mx-2" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/yourphonenumber" class="btn btn-light mx-2" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Orang Muda Katolik Santo Martinus Selorejo. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Tampilkan SweetAlert2 saat pertama kali halaman dimuat
+          Swal.fire({
+            title: 'Halooo Orang Mudaa!!!',
+            text: 'Mari kita berjelajah lebih jauh di OMK ST.MRTINUS SELOREJO',
+            icon: 'info',
+            confirmButtonText: 'Start',
+            customClass: {
+              container: 'swal-container'  // Menggunakan kelas kustom untuk styling tambahan
+            }
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Mainkan musik
+              var music = document.getElementById('backgroundMusic');
+              music.play();
+            }
+          });
+        });
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
